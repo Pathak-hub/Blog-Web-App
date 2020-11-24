@@ -1,0 +1,43 @@
+<html>
+<head>
+    <title>Welcome to the blog</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="stylesheets/app.css">
+</head>
+<body>
+    <div class= "ui fixed inverted menu">
+        <div class ="ui container">
+<div class = "header item"><i class="camera icon"></i>Blog Site</div>
+<a href="/" class = "item">Home</a>
+<a href="/new" class ="item">New Post</a>
+
+</div>
+    </div>
+
+<div class ="ui main text container segment">
+<div class = "ui huge header">New Blog</div>
+<form class = "ui form"action="/?_methord=PUT" methord ="POST">
+    <div class ="field">
+        <label>Title</label>
+        <input type ="text" name="blog[title]" placeholder="title">
+    </div>
+    <div class ="field">
+        <label>Title</label>
+        <input type="text" name="blog[image]" placeholder="image url">
+    </div>   
+        <div class ="field">
+        <label>Title</label>
+        <textarea name="blog[body]"></textarea>
+    </div>
+
+
+
+<input class ="ui violet big basic button"type ="submit">
+</form>
+
+
+
+</div>
+</body>
+<footer>copyright@ 2020</footer>
+</html>
